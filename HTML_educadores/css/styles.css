@@ -628,6 +628,190 @@ ul, li {
 .para-colorir:hover {
     background-image: url('../img/bt_download_pdf3_hover.png');
 }
+
+.citacao p {
+    font-size: .9em;
+    margin-left: 20%;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-width: 1px;
+}
+
+td{
+    padding-top: 10px;
+    padding-left: 10px;
+    vertical-align: text-top;
+}
+
+.painel-EANEducacao{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 568px;
+    width: 684px;
+    background: url('../img/info2.png');
+    position: relative;
+}
+
+.btn-painel-EANEducacao{
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    position: absolute;
+}
+
+.btn-painel-EANEducacao-infantil{
+    height: 300px;
+    width: 280px;
+    left: 5%;
+    top: 30%;
+}
+
+.btn-painel-EANEducacao-fundamental{
+    height: 300px;
+    width: 309px;
+    left: 52%;
+    top: 19%;
+}
+
+.painel-EANEducacao:has(.btn-painel-EANEducacao-infantil:hover) {
+    background: url('../img/info2_bt1.png') no-repeat;
+    transition: .5s;
+}
+
+.painel-EANEducacao:has(.btn-painel-EANEducacao-fundamental:hover) {
+    background: url('../img/info2_bt2.png') no-repeat;
+    transition: .5s;
+}
+
+.espera-video{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*FLIP CARDS*/
+.flip-card {
+    background-color: transparent;
+    width: 428px;
+    height: 545px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 20px;
+    transform-origin: top center;
+}
+
+.flip-card-inner {
+    background: url('../img/embalagem_frente_num.png');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    background: url('../img/embalagem_verso_num.png');
+    background-size: cover;
+
+    transform: rotateY(180deg);
+}
+/*FIM FLIP CARDS*/
+
+.radius {
+    border-radius: 25px;
+}
+
+/* .verso{
+    position: relative;
+} */
+
+.frente button, .verso button{
+    position: absolute;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    background-size: contain;
+
+} 
+
+.btn-1{
+    top: 24%;
+    left: 13%;
+    background: url('../img/num_1.png');
+}
+
+.btn-2{
+    top: 29%;
+    left: 13%;
+    background: url('../img/num_2.png');
+
+}
+
+.btn-3{
+    top: 28%;
+    left: 57%;
+    background: url('../img/num_3.png');
+
+}
+
+.btn-4{
+    top: 28%;
+    left: 69%;
+    background: url('../img/num_4.png');
+
+}
+
+.btn-5{
+    top: 37%;
+    left: 13%;
+    background: url('../img/num_5.png');
+
+}
+
+.verso button:hover{
+    transform: scale(1.2);
+    transition: ease-in-out .3s;
+}
+
+.marcador-padrao li:nth-child(odd) {
+    list-style-image: url('../img/marcador1.png');
+}
+
+.marcador-padrao li:nth-child(even) {
+    list-style-image: url('../img/marcador2.png');
+}
+
+.marcador-checklist li {
+    list-style-image: url('../img/marcador2.png');
+}
+
+
+
+
 @media (max-width:1400px){
     #img-bola {
         animation: unset;

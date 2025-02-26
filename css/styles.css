@@ -398,6 +398,12 @@ figcaption {
     margin: 80px auto;
 }
 
+#figura-2{
+    height: 280px;
+    margin: auto;
+    display: block;
+}
+
 
 .tabela-container {
     height: 680px;
@@ -628,6 +634,130 @@ ul, li {
 .para-colorir:hover {
     background-image: url('../img/bt_download_pdf3_hover.png');
 }
+
+
+/* painel ods */
+
+
+.painelODS{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.btn-painelODS{
+    height: 184px;
+    width: 184px;
+    color: transparent;
+    border: none;
+}
+
+.btn-ODS2{
+    background: url('../img/bt_ODS1.png') no-repeat;
+}
+
+.btn-ODS3{
+    background: url('../img/bt_ODS2.png') no-repeat;
+}
+
+.btn-ODS4{
+    background: url('../img/bt_ODS3.png') no-repeat;
+}
+
+.btn-ODS12{
+    background: url('../img/bt_ODS4.png') no-repeat;
+}
+
+.btn-painelODS:hover{
+    scale: 1.2;
+    transition: ease-in-out .5s;
+    opacity: 50%;
+}
+
+/* painel guia alimentar */
+
+.painelGuiaAlimentar{
+    height: 693px;
+    width: 875px;
+    background: url('../img/info1.png');
+    position: relative;
+}
+
+.btn-painelGuiaAlimentar{
+    color: transparent;
+    border: none;
+}
+.btn-inNatura{
+    height: 329px;
+    width: 230px;
+    background: transparent;
+    position: absolute;
+    top: 43%;
+    left: 0%;
+}
+
+.btn-processados{
+    height: 270px;
+    width: 230px;
+    background: transparent;
+    position: absolute;
+    top: 55%;
+    left: 26%;
+}
+
+.btn-ultraProcessados{
+    height: 200px;
+    width: 230px;
+    background: transparent;
+    position: absolute;
+    top: 70%;
+    left: 52%;
+}
+
+.painelGuiaAlimentar:has(.btn-inNatura:hover) {
+    background: url('../img/info1_bt1.png') no-repeat;
+    transition: .5s;
+}
+
+.painelGuiaAlimentar:has(.btn-processados:hover) {
+    background: url('../img/info1_bt2.png') no-repeat;
+    transition: .5s;
+}
+
+.painelGuiaAlimentar:has(.btn-ultraProcessados:hover) {
+    background: url('../img/info1_bt3.png') no-repeat;
+    transition: .5s;
+}
+
+.radius{
+    border-radius: 15px;
+}
+
+.marcador-padrao li:nth-child(odd) {
+    list-style-image: url('../img/marcador1.png');
+}
+
+.marcador-padrao li:nth-child(even) {
+    list-style-image: url('../img/marcador2.png');
+}
+
+.espera-video{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
 @media (max-width:1400px){
     #img-bola {
         animation: unset;
