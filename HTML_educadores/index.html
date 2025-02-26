@@ -359,24 +359,24 @@
 
           <p>A seguir, você encontrará informações referentes aos elementos da embalagem:</p>
 
-          <p class="no-print">Clique ou toque nos botões e nas setas para visualizar o conteúdo.</p>
+          <p class="no-print">Clique ou toque nos botões para visualizar o conteúdo.</p>
           
           <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="false">
 
-              <div class="flip-card">
-                  <div class="flip-card-inner radius">
-                      <div class="flip-card-front frente">
-                        <button class="btn-6">6</button>
+              <div class="embalagem">
+                <div class="frente">
+                  <button class="btn-embalagem btn-1" data-bs-toggle="modal" data-bs-target="#modalRotulagem">1</button>
+                </div>
+                <div class="verso">
+                  <button class="btn-embalagem btn-2" data-bs-toggle="modal" data-bs-target="#modalTabela">2</button>
 
-                      </div>
-                      <div class="flip-card-back verso">
-                        <button class="btn-1" data-bs-toggle="modal" data-bs-target="#modalTabela">1</button>
-                        <button class="btn-2">2</button>
-                        <button class="btn-3">3</button>
-                        <button class="btn-4">4</button>
-                        <button class="btn-5" data-bs-toggle="modal" data-bs-target="#modalNutrientes">5</button>
-                      </div>
-                  </div>
+                  <button class="btn-embalagem btn-3" data-bs-toggle="modal" data-bs-target="#modalTabelaNutricional">3</button>
+
+                  <button class="btn-embalagem btn-4" data-bs-toggle="modal" data-bs-target="#modalNutrientesObrigatorios">4</button>
+
+
+                  <button class="btn-embalagem btn-5" data-bs-toggle="modal" data-bs-target="#modalIngredientes">5</button>
+                </div>
               </div>              
   
           </div>
@@ -425,7 +425,7 @@
                           <p>Para fins da rotulagem nutricional, a quantidade dos ingredientes críticos é considerada alta conforme o quadro: </p>
 
                           <div class="table-responsive table">
-                            <table class="text-left align-middle">
+                            <table class="text-left align-middle  mx-auto">
                                 <thead>
                                     <tr>
                                         <th class="w-25">INGREDIENTE</th>
@@ -482,7 +482,7 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalTabela">Tabela nutricional</h5>
+                        <h5 class="modal-title" id="modalTabela">Tabela nutricional: quantidade por porções, porção referência e medida caseira</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -499,26 +499,14 @@
                           </ul>
 
                           <p>Veja:</p>
-          
-                           
-          
+
                           <figure class="my-5">
-                            <div class="figure-img mx-auto mb-4">
+                            <div class="figure-img mx-auto mb-4 tabela">
                                 <img class="img-fluid d-block mx-auto shadow" src="img/tabela_nutricional.png">
+                                <div class="destaque-tabela"></div>
                             </div>
                             <figcaption class="figure-caption text-center">Exemplo de tabela nutricional <br> Fonte: Sesc/RS (2025) </figcaption>
-                          </figure>
-          
-                           <p>Já na parte de baixo da tabela, está o valor energético e a lista obrigatória de nutrientes. Na primeira coluna estão expressas as quantidades por 100 g ou 100 ml do alimento; na segunda coluna, estão as quantidades de nutrientes por porção recomendada para consumo; na terceira coluna, estão o percentual de valores diários (%VD), que indica quanto a porção de referência fornece em relação ao consumo diário recomendado de nutrientes com base em uma dieta de 2.000 kcal.</p>
-
-                           <p>Essa é uma referência padrão sobre as necessidades nutricionais de uma pessoa adulta e que pode variar de acordo com sexo, idade, atividade física, entre outros fatores. </p>
-
-                           <figure class="my-5">
-                            <div class="figure-img mx-auto mb-4">
-                                <img class="img-fluid d-block mx-auto shadow radius" src="img/tabela_nutricional2.png">
-                            </div>
-                            <figcaption class="figure-caption text-center">Exemplo de tabela nutricional <br> Fonte: Sesc/RS (2025) </figcaption>
-                          </figure>          
+                          </figure>  
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
@@ -528,11 +516,43 @@
             </div>
           </div>
 
-          <div class="modal fade" id="modalNutrientes" tabindex="-1" aria-labelledby="modalNutrientes" aria-hidden="false">
+          <div class="modal fade" id="modalTabelaNutricional" tabindex="-1" aria-labelledby="modalTabelaNutricional" aria-hidden="false">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalNutrientes">Nutrientes obrigatórios</h5>
+                        <h5 class="modal-title" id="modalTabelaNutricional">Tabela nutricional: valor energético e lista obrigatória</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+
+
+
+                          <p>Já na parte de baixo da tabela, está o valor energético e a lista obrigatória de nutrientes. Na primeira coluna estão expressas as quantidades por 100 g ou 100 ml do alimento; na segunda coluna, estão as quantidades de nutrientes por porção recomendada para consumo; na terceira coluna, estão o percentual de valores diários (%VD), que indica quanto a porção de referência fornece em relação ao consumo diário recomendado de nutrientes com base em uma dieta de 2.000 kcal.</p>
+
+                          <p>Essa é uma referência padrão sobre as necessidades nutricionais de uma pessoa adulta e que pode variar de acordo com sexo, idade, atividade física, entre outros fatores. </p>
+
+                          <figure class="my-5">
+                           <div class="figure-img mx-auto mb-4">
+                               <img class="img-fluid d-block mx-auto shadow" src="img/tabela_nutricional3.png">
+                           </div>
+                           <figcaption class="figure-caption text-center">Exemplo de tabela nutricional <br> Fonte: Sesc/RS (2025) </figcaption>
+                         </figure>   
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="botao hvr-sweep-to-right" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modalNutrientesObrigatorios" tabindex="-1" aria-labelledby="modalNutrientesObrigatorios" aria-hidden="false">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalNutrientesObrigatorios">Tabela nutricional: nutrientes obrigatórios</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -544,7 +564,7 @@
           
                           <figure class="my-5">
                             <div class="figure-img mx-auto mb-4">
-                                <img class="img-fluid d-block mx-auto shadow" src="img/tabela_nutricional.png">
+                                <img class="img-fluid d-block mx-auto shadow" src="img/tabela_nutricional2.png">
                             </div>
                             <figcaption class="figure-caption text-center">Exemplo de tabela nutricional <br> Fonte: Sesc/RS (2025) </figcaption>
                           </figure>
@@ -647,7 +667,7 @@
 
           <figure class="my-5">
             <div class="figure-img mx-auto mb-4">
-                <img class="img-fluid d-block mx-auto shadow" src="img/img6.png">
+                <img class="img-fluid d-block mx-auto radius shadow" src="img/img6.png">
             </div>
             <figcaption class="figure-caption text-center">Iogurte zero açúcar <br> Fonte: Revista Expressiva (2014) </figcaption>
           </figure>
@@ -671,7 +691,172 @@
 
           <p>A atividade física é essencial para o crescimento e desenvolvimento saudável de crianças, até mesmo bebês. Ela contribui para a manutenção do peso adequado, melhora a qualidade do sono, auxilia na coordenação motora e no desenvolvimento cognitivo, além de fortalecer músculos, ossos e a saúde do coração. Quando estimulada desde cedo, a prática de atividade física torna-se parte da rotina e tende a ser mantida ao longo da vida. </p>
 
-          <p class="no-print">Clique ou toque nos <i>cards</i> para visualizar o conteúdo. </p>
+          <p class="no-print" aria-hidden="true">Clique ou toque nos <i>cards</i> para visualizar o conteúdo. </p>
+
+          <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+
+          <div class="flip-card card1">
+              <div class="flip-card-inner radius">
+                  <div class="flip-card-front card1-front">
+
+                  </div>
+                  <div class="flip-card-back card1-back">
+                    
+                  </div>
+              </div>
+          </div>      
+            
+          <div class="flip-card card2">
+              <div class="flip-card-inner radius">
+                  <div class="flip-card-front card2-front">
+
+                  </div>
+                  <div class="flip-card-back card2-back">
+                    
+                  </div>
+              </div>
+          </div>   
+
+          <div class="flip-card card3">
+            <div class="flip-card-inner radius">
+                <div class="flip-card-front card3-front">
+
+                </div>
+                <div class="flip-card-back card3-back">
+                  
+                </div>
+            </div>
+          </div>
+          
+          <div class="visually-hidden print">
+            <p>Crianças de até 1 ano</p>
+            <p>Atividades que incentivem o movimento, como engatinhar, rastejar e se equilibrar, por 30 minutos.</p>
+            <p>Crianças de 1 a 2 anos</p>
+            <p>Atividades de qualquer intensidade, como andar, correr e pular, por três horas.</p>
+            <p>Crianças de 3 a 5 anos</p>
+            <p>Atividades de intensidade moderada a vigorosa, como correr, pular, arremessar e escalar, por uma hora.</p>
+          </div>
+          </div>
+
+          <p><b>Acompanhe algumas sugestões de atividades:</b></p>
+
+          <ul class="marcador-padrao">
+
+            <li>Ciranda</li>
+            <li>Sapata</li>
+            <li>Pega-pega</li>
+            <li>Corda</li>
+            <li>Elástico</li>
+            <li>Jogos com bola</li>
+            <li>Esconde-esconde</li>
+            <li>Bambo</li>
+            <li>Dança</li>
+            <li>Caça ao tesouro</li>
+            <li>Amarelinha dos alimentos (explorar alimentos consumidos nas refeições – café da manhã/almoço/lanche/jantar) </li>
+            <li><i>Yoga</i> dos bichos </li>
+
+          </ul>
+
+          <p>Essas atividades podem ser realizadas por meio de jogos, brincadeiras, aulas de Educação Física, esportes e deslocamento ativo, com a supervisão de pais e professores. A participação dos pais nas atividades aumenta a probabilidade de as crianças se manterem fisicamente ativas, aproveitando todos os benefícios dessa prática. </p>
+
+          <h3>Atividade física para crianças com mais de 6 anos</h3>
+
+          <p>A prática regular de atividade física traz diversos benefícios, promovendo o bem-estar e a qualidade de vida, melhorando as habilidades sociais, a saúde cardiovascular e as condições físicas. Além disso, favorece o desenvolvimento motor (como correr e saltar), melhora o humor, reduz o estresse e os sintomas de ansiedade e depressão e contribui para o bom desempenho escolar. A atividade física também ajuda na manutenção do peso adequado e reduz o risco de obesidade, incentivando um estilo de vida saudável e hábitos alimentares adequados. </p>
+
+          <div class="row g0">
+            
+            <div class="col-md-5">
+              <figure class="my-5">
+                <div class="figure-img ">
+                    <img class="img-fluid mx-auto d-block " src="img/guia_alimentar.png" style="height: 350px;">
+                </div>
+              </figure>
+            </div>
+            <div class="col-md-7 my-auto">
+              <p>O <i>Guia de Atividade Física para a População Brasileira</i> (2014) recomenda pelo menos 60 minutos de atividade física diária, com atividades que aumentem a respiração e os batimentos cardíacos. Além disso, é importante incluir, no mínimo três dias por semana, exercícios que fortaleçam músculos e ossos, como pular corda, saltar ou brincar de cabo de guerra, e participar ativamente das aulas de Educação Física. </p>
+            </div>
+          </div>
+
+          <b><p>Acompanhe algumas sugestões de atividades: </p></b>
+
+          <ul class="marcador-padrao">
+            <li>Caminhar </li>
+            <li>Correr </li>
+            <li>Empinar pipa </li>
+            <li>Dançar </li>
+            <li>Nadar </li>
+            <li>Pedalar </li>
+            <li>Surfar </li>
+            <li>Jogar futebol, vôlei, basquete, bocha, tênis, peteca ou frescobol </li>
+            <li>Fazer ginástica ou artes marciais </li>
+            <li>Participar de brincadeiras e jogos, como brincar de esconde-esconde e pega-pega, pular corda, saltar elástico, jogar queimada/baleado/carimba/caçador, jogar taco/bete, entre outros </li>
+          </ul>
+
+          <p>Educador, mantenha-se ativo e seja exemplo para que as crianças e os jovens também adotem ou mantenham a prática de atividade física. </p>
+
+          <p>O <i>Guia de Atividade Física para a População Brasileira</i> (2021) orienta que se mostre as variedades de atividades físicas, como jogos, práticas corporais, brincadeiras, danças e esportes para as crianças e os jovens, tornando-as atrativas. Converse com os pais ou responsáveis dos alunos, indicando atividades físicas que eles possam fazer com a criança ou o jovem. </p>
+
+          <p>Desenvolva atividades físicas que estimulem os estudantes a diminuírem o tempo em comportamento sedentário durante as atividades que eles fazem na escola. </p>
+
+          <h3>Tempo de tela</h3>
+
+
+          <div class="row g0">
+            
+            <div class="col-md-5">
+              <figure class="my-5">
+                <div class="figure-img ">
+                    <img class="img-fluid mx-auto d-block radius shadown" src="img/img7.png">
+                </div>
+              </figure>
+            </div>
+            <div class="col-md-7 my-auto">
+              <p>O tempo em frente às telas (celular, computador, <i>tablet</i>, <i>videogame</i>, TV), para as crianças, <b>deve ser reduzido ao máximo</b>. Essa atitude ajuda no controle do peso, no desenvolvimento motor e cognitivo e nas habilidades sociais.  </p>
+            </div>
+          </div>
+
+          <p>Acompanhe a seguir quais são os limites de tela recomendados pela Sociedade Brasileira de Pediatria (2022) de acordo com a faixa etária, lembrando que seu uso sempre deve ocorrer com supervisão dos pais ou responsáveis. </p>
+
+          <figure class="my-5">
+            <div class="figure-img ">
+                <img class="img-fluid mx-auto d-block radius shadown" src="img/info_tela.png">
+            </div>
+          </figure>
+
+          <div class="visually-hidden print">
+            <p><b>Bebês</b>: nenhum tempo em frente às telas.</p>  
+
+            <p><b>1 a 5 anos</b>: até uma hora por dia.</p> 
+
+            <p><b>6 a 10 anos</b>: entre uma e duas horas por dia.</p> 
+
+            <p><b>11 a 18 anos</b>: entre duas e três horas por dia.</p> 
+          </div>
+
+          <p>Além disso, bebês não devem ficar mais de uma hora seguida em cadeirinhas ou berços; o colo e a interação com os cuidadores são essenciais para o desenvolvimento. </p>
+
+          <p><b>Acompanhe mais algumas orientações a respeito do uso de telas:</b></p>
+
+          <figure class="my-5">
+            <div class="figure-img ">
+                <img class="img-fluid mx-auto d-block radius shadown" src="img/info_orientacoes.png">
+            </div>
+          </figure>
+
+          <div class="visually-hidden print">
+
+            <ul>
+              <li>Evitar longos períodos de comportamento sedentário, como ficar muito tempo sentado assistindo à TV ou usando dispositivos digitais  </li>
+              <li>Mover-se por pelo menos cinco minutos a cada uma hora, levantando-se, alongando-se ou fazendo uma pausa </li>
+              <li>Substituir o comportamento sedentário por atividades físicas ou culturais, como pintura, desenho e jogos educativos </li>
+              <li>Criar uma rotina equilibrada com tempo para estudar, praticar atividades físicas, relaxar, comer e dormir </li>
+            </ul>
+          </div>
+
+          <p>O seu trabalho, realizado diariamente, é essencial para formar cidadãos mais conscientes e saudáveis. Ao longo deste material, discutimos a relevância de combater a obesidade infantil e promover hábitos alimentares saudáveis, reforçando o papel das escolas como agentes transformadores. Cada ação, por menor que pareça, contribui para um futuro mais equilibrado e próspero para nossas crianças. Sigamos juntos, comprometidos em fazer a diferença, incentivando escolhas mais saudáveis e transformando vidas dentro e fora das salas de aula.</p>
+
+          <p class="no-print">Para finalizar, pratique fazendo o exercício a seguir.</p>
+
 
           <h4>Referências:</h4>
           <p>https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar<br

@@ -710,7 +710,6 @@ td{
 }
 
 .flip-card-inner {
-    background: url('../img/embalagem_frente_num.png');
     background-size: cover;
     position: relative;
     width: 100%;
@@ -731,7 +730,6 @@ td{
     backface-visibility: hidden;
 }
 .flip-card-back {
-    background: url('../img/embalagem_verso_num.png');
     background-size: cover;
 
     transform: rotateY(180deg);
@@ -742,11 +740,68 @@ td{
     border-radius: 25px;
 }
 
-/* .verso{
-    position: relative;
-} */
+.embalagem{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    gap: 5%;
+}
 
-.frente button, .verso button{
+
+
+.verso{
+    position: relative;
+    background: url('../img/embalagem_verso.png') no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 100%;
+} 
+
+
+.frente{
+    position: relative;
+
+    background: url('../img/embalagem_frente.png') no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 100%;
+}
+
+.btn-1{
+    top: 7%;
+    left: 8%;
+    background: url('../img/num_1.png');
+}
+
+.btn-2{
+    top: 25%;
+    left: 13%;
+    background: url('../img/num_2.png');
+
+}
+
+.btn-3{
+    top: 25%;
+    left: 58%;
+    background: url('../img/num_3.png');
+
+}
+
+.btn-4{
+    top: 39%;
+    left: 12%;
+    background: url('../img/num_4.png');
+
+}
+
+.btn-5{
+    top: 65%;
+    left: 11%;
+    background: url('../img/num_5.png');
+
+}
+
+.btn-embalagem{
     position: absolute;
     border-radius: 100%;
     height: 30px;
@@ -755,41 +810,20 @@ td{
     border: none;
     color: transparent;
     background-size: contain;
-
 } 
 
-.btn-1{
-    top: 24%;
-    left: 13%;
-    background: url('../img/num_1.png');
+.tabela{
+    position: relative;
 }
 
-.btn-2{
-    top: 29%;
-    left: 13%;
-    background: url('../img/num_2.png');
-
-}
-
-.btn-3{
-    top: 28%;
-    left: 57%;
-    background: url('../img/num_3.png');
-
-}
-
-.btn-4{
-    top: 28%;
-    left: 69%;
-    background: url('../img/num_4.png');
-
-}
-
-.btn-5{
-    top: 37%;
-    left: 13%;
-    background: url('../img/num_5.png');
-
+.destaque-tabela{
+    position: absolute;
+    height: 53px;
+    width: 545px;
+    top: 8%;
+    left: 24%;
+    background-color: yellowgreen;
+    opacity: 50%;
 }
 
 .verso button:hover{
@@ -806,9 +840,40 @@ td{
 }
 
 .marcador-checklist li {
-    list-style-image: url('../img/marcador2.png');
+    list-style-image: url('../img/checklist.png');
 }
 
+.card1,
+.card2,
+.card3{
+    height: 351px;
+    width: 301px;
+}
+
+.card1-front{
+    background: url('../img/card1.png');
+}
+
+.card1-back{
+    background: url('../img/card1_verso.png');
+}
+
+.card2-front{
+    background: url('../img/card2.png');
+}
+
+.card2-back{
+    background: url('../img/card2_verso.png');
+}
+
+
+.card3-front{
+    background: url('../img/card3.png');
+}
+
+.card3-back{
+    background: url('../img/card3_verso.png');
+}
 
 
 
