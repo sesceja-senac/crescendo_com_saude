@@ -318,7 +318,11 @@ figcaption {
 .conteudo {
     padding-top: 45px;
 }
-
+.conteudo h2 {
+    color: #094B89;
+    margin-top: 2.5em;
+    font-weight: 700;
+}
 .conteudo h3 {
     color: #094B89;
     margin-top: 2.5em;
