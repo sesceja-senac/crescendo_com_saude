@@ -128,11 +128,7 @@ h1 {
     line-height: 1;
 }
 
-.conteudo h2,
-.conteudo h3 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
+
 
 b {
     font-weight: 700;
@@ -318,6 +314,19 @@ figcaption {
 .conteudo {
     padding-top: 45px;
 }
+.conteudo h2,
+.conteudo h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.conteudo h2 {
+    color: #094B89;
+    margin-top: 2.5em;
+    font-weight: 700;
+}
+
+
 
 .conteudo h3 {
     color: #094B89;
@@ -329,6 +338,8 @@ figcaption {
     margin-top: 1em;
     margin-bottom: 0.8em;
 }
+
+
 
 .sesc-video {
     background-image: url('../img/video1.png');
@@ -822,8 +833,8 @@ td{
     width: 545px;
     top: 8%;
     left: 24%;
-    background-color: yellowgreen;
-    opacity: 50%;
+    background-color: #ffff00;
+    opacity: 60%;
 }
 
 .verso button:hover{

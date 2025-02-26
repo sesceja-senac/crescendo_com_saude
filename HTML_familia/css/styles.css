@@ -319,6 +319,12 @@ figcaption {
     padding-top: 45px;
 }
 
+.conteudo h2 {
+    color: #094B89;
+    margin-top: 2.5em;
+    font-weight: 700;
+}
+
 .conteudo h3 {
     color: #094B89;
     margin-top: 2.5em;
@@ -628,6 +634,82 @@ ul, li {
 .para-colorir:hover {
     background-image: url('../img/bt_download_pdf3_hover.png');
 }
+
+.embalagem{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    gap: 5%;
+}
+
+
+
+.verso{
+    position: relative;
+    background: url('../img/embalagem_verso.png') no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 100%;
+} 
+
+
+.frente{
+    position: relative;
+
+    background: url('../img/embalagem_frente.png') no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 100%;
+}
+
+.btn-1{
+    top: 7%;
+    left: 8%;
+    background: url('../img/num_1.png');
+}
+
+.btn-2{
+    top: 25%;
+    left: 13%;
+    background: url('../img/num_2.png');
+
+}
+
+.btn-3{
+    top: 25%;
+    left: 58%;
+    background: url('../img/num_3.png');
+
+}
+
+.btn-4{
+    top: 39%;
+    left: 12%;
+    background: url('../img/num_4.png');
+
+}
+
+.btn-5{
+    top: 65%;
+    left: 11%;
+    background: url('../img/num_5.png');
+
+}
+
+.btn-embalagem{
+    position: absolute;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    background-size: contain;
+} 
+
+
+
+
 @media (max-width:1400px){
     #img-bola {
         animation: unset;
