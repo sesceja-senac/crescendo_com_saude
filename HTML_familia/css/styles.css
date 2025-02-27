@@ -687,7 +687,7 @@ tbody, td, tfoot, th, thead, tr {
 
 .btn-2{
     top: 25%;
-    left: 13%;
+    left: 11%;
     background: url('../img/num_2.png');
 
 }
@@ -701,7 +701,7 @@ tbody, td, tfoot, th, thead, tr {
 
 .btn-4{
     top: 39%;
-    left: 12%;
+    left: 11%;
     background: url('../img/num_4.png');
 
 }
@@ -711,6 +711,12 @@ tbody, td, tfoot, th, thead, tr {
     left: 11%;
     background: url('../img/num_5.png');
 
+}
+
+.frente button:hover, 
+.verso button:hover{
+    transform: scale(1.2);
+    transition: ease-in-out .3s;
 }
 
 .btn-embalagem{

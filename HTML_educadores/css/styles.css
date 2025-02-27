@@ -9,6 +9,8 @@
 #preload-3 { background: url('../img/aba_familia_hover.png') no-repeat -9999px -9999px; }
 #preload-4 { background: url('../img/bt_download_pdf1_h.png') no-repeat -9999px -9999px; }
 #preload-5 { background: url('../img/bt_download_pdf2_h.png') no-repeat -9999px -9999px; }
+#preload-6 { background: url('../img/bt_download_pdf4_h.png') no-repeat -9999px -9999px; }
+
 
 body {
     /* font-family: 'Roboto'; */
@@ -510,9 +512,10 @@ figcaption {
     display: block;
     margin: 10px auto;
 }
-ul, li {
-    font-size: 17px;
+ul, li, td {
+    font-size: 14px;
 }
+
 .hidden-lg {
     display: none;
 }
@@ -520,6 +523,7 @@ ul, li {
 .btn-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .pdf-1 {
@@ -544,6 +548,17 @@ ul, li {
     transform: scale(.9);
 }
 
+.pdf-4 {
+    height: 236px;
+    width: 388px;
+    display: block;
+    background-image: url('../img/bt_download_pdf4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 15px 25px;
+    transform: scale(.9);
+}
+
 .pdf-1:hover {
     background-image: url('../img/bt_download_pdf1_h.png');
 }
@@ -551,6 +566,11 @@ ul, li {
 .pdf-2:hover {
     background-image: url('../img/bt_download_pdf2_h.png');
 }
+
+.pdf-4:hover {
+    background-image: url('../img/bt_download_pdf4_h.png');
+}
+
 
 #accordionMobile {
     width: 100%;
@@ -709,6 +729,10 @@ td{
     margin-bottom: 20px;
 }
 
+.conhecimentos p{
+    font-size: 14px;
+}
+
 /*FLIP CARDS*/
 .flip-card {
     background-color: transparent;
@@ -786,21 +810,21 @@ td{
 
 .btn-2{
     top: 25%;
-    left: 13%;
+    left: 11%;
     background: url('../img/num_2.png');
 
 }
 
 .btn-3{
-    top: 25%;
-    left: 58%;
+    top: 28%;
+    left: 55%;
     background: url('../img/num_3.png');
 
 }
 
 .btn-4{
     top: 39%;
-    left: 12%;
+    left: 11%;
     background: url('../img/num_4.png');
 
 }
@@ -837,6 +861,7 @@ td{
     opacity: 60%;
 }
 
+.frente button:hover, 
 .verso button:hover{
     transform: scale(1.2);
     transition: ease-in-out .3s;

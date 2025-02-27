@@ -632,6 +632,14 @@ ul, li {
 .para-colorir:hover {
     background-image: url('../img/bt_download_pdf3_hover.png');
 }
+
+.marcador-padrao li:nth-child(odd) {
+    list-style-image: url('../img/marcador1.png');
+}
+
+.marcador-padrao li:nth-child(even) {
+    list-style-image: url('../img/marcador2.png');
+}
 @media (max-width:1400px){
     #img-bola {
         animation: unset;
