@@ -886,6 +886,24 @@ td{
     background: url('../img/card3_verso.png');
 }
 
+/* tabela */
+
+th{
+    background-color: #094B89;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    
+    border: 3px solid #094B89;
+
+}
+
+.table>:not(:first-child) {
+    border-top: none;
+}
 
 
 @media (max-width:1400px){
