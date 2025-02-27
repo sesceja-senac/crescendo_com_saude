@@ -772,9 +772,27 @@ ul, li {
         width: 80%;
         margin: 15px auto;
     }
+
+    .painelGuiaAlimentar{
+        scale: 0.8;
+        transform-origin: left;
+    }
+    .comensalidade{
+        margin-top: -150px;
+    }
 }
 
 @media (max-width:1000px){
+
+    .painelGuiaAlimentar{
+        scale: 0.6;
+        transform-origin: top left;
+    }
+
+    .comensalidade{
+        margin-top: -350px;
+    }
+
     .sesc-video {
         margin: 0 auto;
     }
@@ -824,6 +842,15 @@ ul, li {
 }
 
 @media (max-width: 650px) {
+
+    .painelGuiaAlimentar{
+        scale: 0.4;
+        transform-origin: top left;
+    }
+
+    .comensalidade{
+        margin-top: -550px;
+    }
     .logos-container {
         flex-direction: column;
         padding-top: 40px;

@@ -920,9 +920,96 @@ tbody, td, tfoot, th, thead, tr {
         width: 80%;
         margin: 15px auto;
     }
+
+    .material-complementar{
+        display: flex;
+        flex-direction: column;
+align-items: center;    }
+
+    .embalagem{
+        flex-direction: column;
+        height: 1200px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .frente,
+    .verso{
+        width: 80%;
+        margin: auto;
+    }
+
+    .btn-1{
+        top: 7%;
+        left: 6%;
+    }
+    
+    .btn-2{
+        top: 25%;
+        left: 13%;    
+    }
+    
+    .btn-3{
+        top: 28%;
+        left: 58%;    
+    }
+    
+    .btn-4{
+        top: 39%;
+        left: 12%;    
+    }
+    
+    .btn-5{
+        top: 65%;
+        left: 11%;    
+    }
+    
+
+
+
 }
 
 @media (max-width:1000px){
+
+    .embalagem{
+        flex-direction: column;
+        height: 1200px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .frente,
+    .verso{
+        width: 100%;
+        margin: auto;
+    }
+
+    .btn-1{
+        top: 7%;
+        left: 6%;
+    }
+    
+    .btn-2{
+        top: 25%;
+        left: 13%;    
+    }
+    
+    .btn-3{
+        top: 28%;
+        left: 58%;    
+    }
+    
+    .btn-4{
+        top: 39%;
+        left: 12%;    
+    }
+    
+    .btn-5{
+        top: 65%;
+        left: 11%;    
+    }
+
+    
     .sesc-video {
         margin: 0 auto;
     }
@@ -968,6 +1055,46 @@ tbody, td, tfoot, th, thead, tr {
     }
     #conteudo-familia .video-container {
         width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .embalagem{
+        flex-direction: column;
+        height: 1200px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .frente,
+    .verso{
+        width: 100%;
+        margin: auto;
+    }
+
+    .btn-1{
+        top: 7%;
+        left: 6%;
+    }
+    
+    .btn-2{
+        top: 25%;
+        left: 13%;    
+    }
+    
+    .btn-3{
+        top: 28%;
+        left: 58%;    
+    }
+    
+    .btn-4{
+        top: 39%;
+        left: 12%;    
+    }
+    
+    .btn-5{
+        top: 65%;
+        left: 11%;    
     }
 }
 
@@ -1128,6 +1255,45 @@ tbody, td, tfoot, th, thead, tr {
     }
 }
 
+@media (max-width: 450px) {
+    
+    .painel-EANEducacao{
+        scale: 0.55;
+        transform-origin: top left;
+
+    }
+    
+    .video1{
+        margin-top: -200px !important;
+    }
+    
+
+    .btn-1{
+        top: 7%;
+        left: 6%;
+    }
+    
+    .btn-2{
+        top: 23%;
+        left: 13%;    
+    }
+    
+    .btn-3{
+        top: 24%;
+        left: 58%;    
+    }
+    
+    .btn-4{
+        top: 39%;
+        left: 12%;    
+    }
+    
+    .btn-5{
+        top: 59%;
+        left: 11%;    
+    }
+}
+
 @keyframes btn-inicio {
     0% {
         transform: scale(1);
@@ -1164,4 +1330,8 @@ tbody, td, tfoot, th, thead, tr {
     100% {
         bottom: -160px;
     }
+}
+
+.container, .container-sm {
+    max-width: 100%;
 }
