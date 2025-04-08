@@ -18,6 +18,18 @@ body {
     word-break: break-word;
 }
 
+.marcador-padrao li:nth-child(odd) {
+    list-style-image: url('../img/marcador1.png');
+}
+
+.marcador-padrao li:nth-child(even) {
+    list-style-image: url('../img/marcador2.png');
+}
+
+.marcador-checklist li {
+    list-style-image: url('../img/checklist.png');
+}
+
 .scrollTop {
     position: fixed;
     right: 20px;
@@ -640,6 +652,26 @@ ul, li {
 .marcador-padrao li:nth-child(even) {
     list-style-image: url('../img/marcador2.png');
 }
+
+.radius {
+    border-radius: 25px;
+}
+
+.box-natura{
+    background-color: #7aae47;
+    color: aliceblue;
+}
+
+.box-processados{
+    color: aliceblue;
+    background-color: #3599d6;    
+}
+
+.box-ultra{
+    color: aliceblue;
+    background-color: #f98410;    
+}
+
 @media (max-width:1400px){
     #img-bola {
         animation: unset;

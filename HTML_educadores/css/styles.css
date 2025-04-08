@@ -516,6 +516,10 @@ ul, li, td {
     font-size: 14px;
 }
 
+.fonte-padrao li{
+    font-size: 17px;
+}
+
 .hidden-lg {
     display: none;
 }
@@ -849,6 +853,14 @@ td{
 
 .tabela{
     position: relative;
+    overflow-x: visible;
+}
+
+table{
+    min-width: 800px;
+    overflow-y: auto;
+    overflow-x: auto;
+
 }
 
 .destaque-tabela{
@@ -941,6 +953,15 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 @media (max-width:1200px){
+
+
+    .destaque-tabela {
+        
+        left: 12%;
+        
+    }
+
+
     #conteudo-familia .video-container {
         width: 80%;
         margin: 15px auto;
@@ -1123,6 +1144,18 @@ align-items: center;    }
     }
 }
 
+@media (max-width: 768px) {
+   
+    .destaque-tabela {
+        
+        height: 37px;
+        width: 403px;
+        left: 2%;
+        
+    }
+
+}
+
 @media (max-width: 650px) {
     .logos-container {
         flex-direction: column;
@@ -1280,7 +1313,27 @@ align-items: center;    }
     }
 }
 
+@media (max-width: 575px) {
+   
+    .destaque-tabela {
+        
+        height: 49px;
+        width: 545px;
+        left: 5%;
+        
+    }
+
+}
+
 @media (max-width: 450px) {
+
+    .destaque-tabela {
+        
+        height: 32px;
+        width: 342px;
+        left: 1%;
+        
+    }
     
     .painel-EANEducacao{
         scale: 0.55;
@@ -1317,6 +1370,18 @@ align-items: center;    }
         top: 59%;
         left: 11%;    
     }
+}
+
+@media (max-width: 414px) {
+
+    .destaque-tabela {
+        
+        height: 29px;
+        width: 306px;
+        left: 1%;
+        
+    }
+    
 }
 
 @keyframes btn-inicio {

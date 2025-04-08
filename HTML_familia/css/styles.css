@@ -18,6 +18,37 @@ body {
     word-break: break-word;
 }
 
+.tabela{
+    position: relative;
+}
+
+
+.destaque-tabela{
+    position: absolute;
+    height: 53px;
+    width: 545px;
+    top: 8%;
+    left: 24%;
+    background-color: #ffff00;
+    opacity: 60%;
+}
+
+.radius {
+    border-radius: 25px;
+}
+
+.marcador-padrao li:nth-child(odd) {
+    list-style-image: url('../img/marcador1.png');
+}
+
+.marcador-padrao li:nth-child(even) {
+    list-style-image: url('../img/marcador2.png');
+}
+
+.marcador-checklist li {
+    list-style-image: url('../img/checklist.png');
+}
+
 .scrollTop {
     position: fixed;
     right: 20px;
@@ -693,7 +724,7 @@ tbody, td, tfoot, th, thead, tr {
 }
 
 .btn-3{
-    top: 25%;
+    top: 28%;
     left: 58%;
     background: url('../img/num_3.png');
 
@@ -747,6 +778,45 @@ tbody, td, tfoot, th, thead, tr {
         width: 80%;
         margin: 15px auto;
     }
+
+    .embalagem{
+        flex-direction: column;
+        height: 1200px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .frente,
+    .verso{
+        width: 80%;
+        margin: auto;
+    }
+
+    .btn-1{
+        top: 7%;
+        left: 6%;
+    }
+    
+    .btn-2{
+        top: 25%;
+        left: 13%;    
+    }
+    
+    .btn-3{
+        top: 28%;
+        left: 58%;    
+    }
+    
+    .btn-4{
+        top: 39%;
+        left: 12%;    
+    }
+    
+    .btn-5{
+        top: 65%;
+        left: 11%;    
+    }
+    
 }
 
 @media (max-width:1000px){
@@ -796,7 +866,87 @@ tbody, td, tfoot, th, thead, tr {
     #conteudo-familia .video-container {
         width: 100%;
     }
+
+    .embalagem{
+        flex-direction: column;
+        height: 1200px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .frente,
+    .verso{
+        width: 100%;
+        margin: auto;
+    }
+
+    .btn-1{
+        top: 7%;
+        left: 6%;
+    }
+    
+    .btn-2{
+        top: 25%;
+        left: 13%;    
+    }
+    
+    .btn-3{
+        top: 28%;
+        left: 58%;    
+    }
+    
+    .btn-4{
+        top: 39%;
+        left: 12%;    
+    }
+    
+    .btn-5{
+        top: 65%;
+        left: 11%;    
+    }
+
 }
+
+@media (max-width: 800px) {
+    .embalagem{
+        flex-direction: column;
+        height: 1200px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .frente,
+    .verso{
+        width: 100%;
+        margin: auto;
+    }
+
+    .btn-1{
+        top: 7%;
+        left: 6%;
+    }
+    
+    .btn-2{
+        top: 25%;
+        left: 13%;    
+    }
+    
+    .btn-3{
+        top: 28%;
+        left: 58%;    
+    }
+    
+    .btn-4{
+        top: 39%;
+        left: 12%;    
+    }
+    
+    .btn-5{
+        top: 65%;
+        left: 11%;    
+    }
+}
+
 
 @media (max-width: 650px) {
     .logos-container {
@@ -952,6 +1102,53 @@ tbody, td, tfoot, th, thead, tr {
     }
     .titulo-img {
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .destaque-tabela {
+        
+        height: 32px;
+        width: 342px;
+        left: 1%;
+        
+    }
+    
+    .painel-EANEducacao{
+        scale: 0.55;
+        transform-origin: top left;
+
+    }
+    
+    .video1{
+        margin-top: -200px !important;
+    }
+    
+
+    .btn-1{
+        top: 7%;
+        left: 6%;
+    }
+    
+    .btn-2{
+        top: 23%;
+        left: 13%;    
+    }
+    
+    .btn-3{
+        top: 24%;
+        left: 58%;    
+    }
+    
+    .btn-4{
+        top: 39%;
+        left: 12%;    
+    }
+    
+    .btn-5{
+        top: 59%;
+        left: 11%;    
     }
 }
 
